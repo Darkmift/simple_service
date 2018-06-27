@@ -1,0 +1,19 @@
+<div class="product-container">
+	<div class="product-info" (click)="showQuantityToggle()">
+		<span>Name: {{product.name}}</span>
+		<span>Price: {{product.price}}$</span>
+		<div class="product-image" [style.backgroundImage]="'url('+ product.image +')'">
+			
+		</div>
+	</div>
+	<app-quantity-selector *ngIf="showQuantity" [index]="index" [product]="product"></app-quantity-selector>
+
+	<form *ngIf="editable" (submit)="onSubmit($event, productName.value, productPrice.value, productImage.value)">
+		<input type="text" name="name" [value]="product.name" #productName>
+		<input type="text" name="price" [value]="product.price" #productPrice>
+		<input type="text" name="image" [value]="product.image" #productImage>
+		<input type="submit" name="submit">
+	</form>
+</div>
+<button (click)="onEdit()">Edit</button>
+<button (click)="onDelete()">Delete</button>

@@ -1,0 +1,10 @@
+<div class="cart-container">
+	<h2>Shopping Cart:</h2>
+	<div *ngFor="let item of dataService.selectedProducts">
+		<div *ngIf="item.quantity != 0" class="item-container">
+			<span>Product: {{ item.productName }}, </span>
+			<span>Total Sum: {{ item.productPrice * item.quantity }}$, </span>
+			<span>Quantity: {{ item.quantity }}</span>
+		</div>
+	</div>
+</div>

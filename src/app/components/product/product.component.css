@@ -1,0 +1,22 @@
+span {
+	display: block;
+}
+
+.product-image {
+	height: 30rem;
+	width: 30rem;
+	background-position: center;
+	background-size: cover;
+}
+
+.product-info {
+	margin: 1rem;
+}
+
+.product-info span {
+	text-align: center;
+}
+
+.product-container {
+	min-height: 10rem;
+}
