@@ -1,22 +1,120 @@
+* {
+    font-family: 'Shrikhand', cursive !important;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
 span {
-	display: block;
+    display: block;
 }
 
 .product-image {
-	height: 30rem;
-	width: 30rem;
-	background-position: center;
-	background-size: cover;
+    height: 10rem;
+    width: 10rem;
+    border-radius: 50%;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 1rem;
 }
 
 .product-info {
-	margin: 1rem;
+    margin: 1rem;
 }
 
 .product-info span {
-	text-align: center;
+    text-align: center;
+}
+
+span {
+    margin-bottom: 0.25rem;
 }
 
 .product-container {
-	min-height: 10rem;
+    min-height: 10rem;
+    background: lightblue;
+    margin: 1rem;
+    border-radius: 5px;
+    width: 15rem;
+    padding: 1rem;
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    background: rgb(110, 145, 156);
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem 0;
+    animation: fadein 2s;
+    -moz-animation: fadein 2s;
+    /* Firefox */
+    -webkit-animation: fadein 2s;
+    /* Safari and Chrome */
+    -o-animation: fadein 2s;
+    /* Opera */
+}
+
+input {
+    padding: 0.5rem;
+    border-radius: 5px;
+}
+
+form input[type="submit"] {
+    margin: 1rem 0;
+}
+
+form input[type="text"] {
+    margin: 0.25rem 0;
+}
+
+button:nth-child(even) {
+    margin-left: 5rem;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadein {
+    /* Firefox */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fadein {
+    /* Safari and Chrome */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadein {
+    /* Opera */
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
 }
